@@ -20,7 +20,7 @@ requirements:
     - python >=3.6
     - setuptools
   run:
-    - astropy>=4.0
+    - astropy >=4.0
     - matplotlib-base
     - numpy
     - python >=3.6
