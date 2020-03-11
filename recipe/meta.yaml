@@ -1,18 +1,18 @@
 {% set name = "pepredicates" %}
-{% set version = "0.0.1" %}
+{% set version = "0.0.2" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: de2addf01e2bccbf361f729c21693f3dc56690caec9abfa75c5a118f1e9f4cfd
+  sha256: 3bc4700bf32f6eb6562446e01aadec3403ba57f1de04bb5b26332dad4cdad1f5
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
