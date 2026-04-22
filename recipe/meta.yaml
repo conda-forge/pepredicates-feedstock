@@ -10,7 +10,7 @@ source:
   sha256: 80a8476fbdca517e1736dc82590793402849eb87522b481dd027c8744fc39d87
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
@@ -20,7 +20,7 @@ requirements:
     - python >=3.6
     - setuptools
   run:
-    - astropy >=4.0
+    - astropy-base >=4.0
     - matplotlib-base
     - numpy
     - python >=3.6
